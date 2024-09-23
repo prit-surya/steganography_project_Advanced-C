@@ -1,4 +1,4 @@
-Steganography - LSB Image Encoding Project
+STEGANOGRAPHY - LSB Image Encoding Project
 
 What is Steganography?
 Steganography is the practice of concealing a file, message, image, or video within another file, message, image, or video. It is a useful technique in digital communication for securing sensitive information.
@@ -52,17 +52,25 @@ Message Decoding: Retrieve the hidden message from an encoded BMP image.
 Output: The secret message is saved into a file called default.txt after decoding.
 
 Directory Structure
-graphql
-Copy code
+
+
+
 Steganography_Project/
 │
 ├── encode.c                    # Encoding logic
+
 ├── decode.c                    # Decoding logic
+
 ├── test_encode.c               # Main program for encoding/decoding
+
 ├── types.h                     # Data types and enum definitions
+
 ├── default.txt           # File where the decoded secret message will be stored
+
 ├── secret.txt                  # File containing the secret message to be encoded
+
 ├── sample.bmp                  # Sample BMP image for encoding
+
 └── README.md                   # Project Documentation
 
 
@@ -74,8 +82,35 @@ Feel free to contribute to this project by opening issues, suggesting new featur
 
 
 Author: Pritesh Suryawanshi
+
 Project Date: 20th June 2024
+
 Guidance: Created under the guidance of Emertxe as part of the ECEP course.
+
+
+
+
+
+
+
+
+
+
+
+
+HOW to Run Project On Linux Ubuntu :-
+
+compile the project :- gcc test_encode.c encode.c decode.c -o a.out
+
+enter secret message in secret.txt
+
+to encode :- ./a.out -e beautiful.bmp secret.txt
+
+to decode :- ./a.out -d stego.bmp
+
+to see decoded output :- cat defaultFile.txt
+
+
 
 
 
